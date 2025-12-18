@@ -17,23 +17,59 @@ This setup ensures scalability, fault tolerance, and stable performance for prod
 
 ---
 
-## Server Pricing (USD)
+## Server Specifications & Individual Pricing (USD)
 
-### Load Balancer Server
-- Monthly Cost: $14.03
-- Primary IPv4: $1.90
+### 1️⃣ Load Balancer Server
+**Purpose:**  
+Traffic distribution, SSL termination, health checks.
+
+**Specifications**
+- CPU: 2 vCPU  
+- RAM: 8 GB  
+- Storage: 80 GB SSD  
+- Traffic: 20 TB  
+
+**Cost**
+- Server: $14.03 / month  
+- Primary IPv4: $1.90 / month  
+- **Total:** **$15.93 / month**
 
 ---
 
-### Application Servers (x3)
-- Monthly Cost per server: $56.15
-- Primary IPv4 per server: $1.90
+### 2️⃣ Application Servers (x3)
+**Purpose:**  
+Hosting multiple Laravel applications, handling PHP requests, queues, and background jobs using Laravel Forge.
+
+**Specifications (per server)**
+- CPU: 8 vCPU (AMD)  
+- RAM: 32 GB  
+- Storage: 240 GB SSD  
+- Traffic: 30 TB  
+
+**Cost (per server)**
+- Server: $56.15 / month  
+- Primary IPv4: $1.90 / month  
+- **Total per server:** **$58.05 / month**
+
+**Total for 3 Application Servers**
+- **$174.15 / month**
 
 ---
 
-### Database Server
-- Monthly Cost: $28.07
-- Primary IPv4: $1.90
+### 3️⃣ Database Server
+**Purpose:**  
+Dedicated database hosting for all applications to ensure performance, stability, and security.
+
+**Specifications**
+- CPU: 4 vCPU  
+- RAM: 16 GB  
+- Storage: 160 GB SSD  
+- Traffic: 20 TB  
+
+**Cost**
+- Server: $28.07 / month  
+- Primary IPv4: $1.90 / month  
+- **Total:** **$29.97 / month**
 
 ---
 
@@ -41,9 +77,10 @@ This setup ensures scalability, fault tolerance, and stable performance for prod
 
 | Component | Cost (USD) |
 |---------|-----------|
-| Servers | $210.55 |
-| IPv4 Addresses (5 servers) | $9.50 |
-| **Total Hosting** | **$220.05** |
+| Load Balancer | $15.93 |
+| Application Servers (3×) | $174.15 |
+| Database Server | $29.97 |
+| **Total Hosting Cost** | **$220.05** |
 
 ---
 
@@ -56,17 +93,19 @@ Backup service is calculated as **20% of total hosting cost**.
 ---
 
 ## Laravel Forge
-- Cost: **$19.00 / month**
+- Plan: Standard
+- Used on Application Servers only
+- **Cost:** **$19.00 / month**
 
 ---
 
-## Total Cost
+## Total Cost Breakdown
 
 ### Monthly Cost
 
 | Item | Cost (USD) |
 |----|------------|
-| Hosting + IPs | $220.05 |
+| Hosting (Servers + IPv4) | $220.05 |
 | Backups (20%) | $44.01 |
 | Laravel Forge | $19.00 |
 | **Total Monthly Cost** | **$283.06** |
@@ -79,16 +118,16 @@ Backup service is calculated as **20% of total hosting cost**.
 ---
 
 ## Key Benefits
-- Designed for multiple Laravel applications
-- High Availability via Load Balancer
+- Designed to host multiple Laravel applications
+- High availability using Load Balancer
 - Improved fault tolerance with 3 Application Servers
-- Dedicated Database Server for performance & security
-- Automated Daily Backups
-- Centralized deployment using Laravel Forge
+- Dedicated Database Server for performance and security
+- Automated daily backups
+- Centralized deployment and management via Laravel Forge
 
 ---
 
 ## Notes
 - All prices are in USD
-- One IPv4 address is assigned to each server
-- Architecture can be scaled horizontally by adding more Application Servers
+- One Primary IPv4 address is assigned to each server
+- Infrastructure can be scaled horizontally by adding more Application Servers
