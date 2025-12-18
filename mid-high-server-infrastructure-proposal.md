@@ -13,7 +13,7 @@ The architecture ensures performance, scalability, and reliability.
 - 2 × Application Servers (Laravel + Forge)
 - 1 × Dedicated Database Server
 - Daily Backups (20% of hosting cost)
-- Laravel Forge (Pro Plan)
+- Laravel Forge (Standard Plan)
 
 ---
 
@@ -78,12 +78,11 @@ Backup service is calculated as **20% of the total hosting cost**.
 ---
 
 ## Laravel Forge
-**Plan:** Forge Pro  
-- Unlimited servers  
-- Installed on Application Servers only  
+**Plan:** Standard  
+- Used on Application Servers only  
 
 **Cost:**  
-- **$36.00 / month**
+- **$19.00 / month**
 
 ---
 
@@ -95,8 +94,8 @@ Backup service is calculated as **20% of the total hosting cost**.
 |-----|------------|
 | Hosting | $154.40 |
 | Backups (20%) | $30.88 |
-| Laravel Forge | $36.00 |
-| **Total Monthly Cost** | **$221.28** |
+| Laravel Forge | $19.00 |
+| **Total Monthly Cost** | **$204.28** |
 
 ---
 
@@ -104,7 +103,7 @@ Backup service is calculated as **20% of the total hosting cost**.
 
 | Item | Cost (USD / Year) |
 |-----|------------------|
-| Total Monthly × 12 | **$2,655.36** |
+| Total Monthly × 12 | **$2,451.36** |
 
 ---
 
@@ -120,8 +119,8 @@ Backup service is calculated as **20% of the total hosting cost**.
 
 ## Notes
 - All prices are in USD.
-- Costs are estimates and may vary slightly based on exchange rate changes.
-- Infrastructure can be scaled based on project growth.
+- Costs are estimates and may vary slightly.
+- Infrastructure can be scaled up or down based on project requirements.
 
 ---
 
