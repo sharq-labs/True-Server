@@ -1,9 +1,9 @@
 # Server Infrastructure Proposal
 
 ## Overview
-This proposal covers a high-availability server infrastructure designed for a Laravel application using **Load Balancer**, **Laravel Forge**, multiple **Application Servers**, and a dedicated **Database Server**.
+This proposal outlines a high-availability server infrastructure designed for a Laravel application using a **Load Balancer**, **Laravel Forge**, multiple **Application Servers**, and a dedicated **Database Server**.
 
-The setup ensures scalability, performance, and reliability.
+The architecture ensures performance, scalability, and reliability.
 
 ---
 
@@ -17,7 +17,7 @@ The setup ensures scalability, performance, and reliability.
 
 ---
 
-## Server Specifications & Pricing
+## Server Specifications & Pricing (USD)
 
 ### Load Balancer Server
 **Plan:** CCX13  
@@ -27,8 +27,7 @@ The setup ensures scalability, performance, and reliability.
 - 20 TB Traffic  
 
 **Price:**  
-- €11.99 / month  
-- ≈ **$14.03 / month**
+- **$14.03 / month**
 
 ---
 
@@ -40,11 +39,10 @@ The setup ensures scalability, performance, and reliability.
 - 30 TB Traffic  
 
 **Price per server:**  
-- €47.99 / month  
-- ≈ **$56.15 / month**
+- **$56.15 / month**
 
 **Total for 2 servers:**  
-- ≈ **$112.30 / month**
+- **$112.30 / month**
 
 ---
 
@@ -56,26 +54,25 @@ The setup ensures scalability, performance, and reliability.
 - 20 TB Traffic  
 
 **Price:**  
-- €23.99 / month  
-- ≈ **$28.07 / month**
+- **$28.07 / month**
 
 ---
 
 ## Hosting Cost Summary (Monthly)
 
 | Component | Monthly Cost (USD) |
-|--------|--------------------|
+|---------|--------------------|
 | Load Balancer | $14.03 |
 | Application Servers (2×) | $112.30 |
 | Database Server | $28.07 |
-| **Total Hosting** | **$154.40** |
+| **Total Hosting Cost** | **$154.40** |
 
 ---
 
 ## Backup Cost
-Backup service is calculated as **20% of the hosting cost**.
+Backup service is calculated as **20% of the total hosting cost**.
 
-- Monthly Backup Cost:  
+- **Monthly Backup Cost:**  
   **20% × $154.40 = $30.88**
 
 ---
@@ -83,18 +80,19 @@ Backup service is calculated as **20% of the hosting cost**.
 ## Laravel Forge
 **Plan:** Forge Pro  
 - Unlimited servers  
-- Used on Application Servers only  
+- Installed on Application Servers only  
 
 **Cost:**  
-- ≈ **$36 / month**
+- **$36.00 / month**
 
 ---
 
 ## Total Cost Breakdown
 
 ### Monthly Cost
+
 | Item | Cost (USD) |
-|----|------------|
+|-----|------------|
 | Hosting | $154.40 |
 | Backups (20%) | $30.88 |
 | Laravel Forge | $36.00 |
@@ -103,30 +101,31 @@ Backup service is calculated as **20% of the hosting cost**.
 ---
 
 ### Yearly Cost
+
 | Item | Cost (USD / Year) |
-|----|------------------|
+|-----|------------------|
 | Total Monthly × 12 | **$2,655.36** |
 
 ---
 
 ## Key Benefits
-- High Availability with Load Balancer
-- Scalable Laravel Architecture
+- High Availability using Load Balancer
+- Scalable Laravel Infrastructure
 - Dedicated Database Server
-- Automated Backups
-- Easy Deployment with Laravel Forge
-- Optimized for High Traffic Applications
+- Automated Daily Backups
+- Easy Deployment & Management with Laravel Forge
+- Optimized for Medium to High Traffic Applications
 
 ---
 
 ## Notes
-- Prices are approximate and based on current EUR → USD conversion.
-- Infrastructure can be scaled up or down based on project needs.
-- Additional management and monitoring services can be added if required.
+- All prices are in USD.
+- Costs are estimates and may vary slightly based on exchange rate changes.
+- Infrastructure can be scaled based on project growth.
 
 ---
 
-## Contact
+## Contact Information
 **Company Name:**  
 **Email:**  
 **Phone / WhatsApp:**  
