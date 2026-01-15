@@ -1,7 +1,7 @@
 # Server Infrastructure Proposal (Single Server)
 
 ## Overview
-Single-server Laravel infrastructure designed to host one or multiple small-to-medium applications with optimized cost and simple management using Laravel Forge.
+Single-server Laravel infrastructure designed to host one or multiple small-to-medium applications with optimized cost and simple management.
 
 This setup is suitable for startups, MVPs, and low-to-medium traffic production environments.
 
@@ -10,7 +10,6 @@ This setup is suitable for startups, MVPs, and low-to-medium traffic production 
 ## Infrastructure Architecture
 - 1 × Application Server (Laravel + Database)
 - Daily Backups (20% of hosting cost)
-- Laravel Forge (Paid)
 - Primary IPv4 for the server
 
 ---
@@ -19,7 +18,7 @@ This setup is suitable for startups, MVPs, and low-to-medium traffic production 
 
 ### 1️⃣ Application Server
 **Purpose:**  
-Hosting Laravel applications, running PHP, queues, background jobs, and database on the same server using Laravel Forge.
+Hosting Laravel applications, running PHP, queues, background jobs, and database on the same server.
 
 **Specifications**
 - CPU: 8 vCPU (AMD)
@@ -51,12 +50,6 @@ Backup service is calculated as **20% of total hosting cost**.
 
 ---
 
-## Laravel Forge
-- Plan: Standard (Already Paid)
-- **Cost:** **$19.00 / month**
-
----
-
 ## Total Cost Breakdown
 
 ### Monthly Cost
@@ -65,20 +58,18 @@ Backup service is calculated as **20% of total hosting cost**.
 |----|------------|
 | Hosting (Server + IPv4) | $58.05 |
 | Backups (20%) | $11.61 |
-| Laravel Forge | $19.00 |
-| **Total Monthly Cost** | **$88.66** |
+| **Total Monthly Cost** | **$69.66** |
 
 ---
 
 ### Yearly Cost
-- **$1,063.92 / year**
+- **$835.92 / year**
 
 ---
 
 ## Key Benefits
 - Simple and cost-effective setup
 - Suitable for MVPs and small-to-medium projects
-- Laravel Forge for easy deployment and management
 - Database and application on the same server
 - Automated daily backups
 - Easy to scale later to multi-server architecture
@@ -88,4 +79,4 @@ Backup service is calculated as **20% of total hosting cost**.
 ## Notes
 - All prices are in USD
 - One Primary IPv4 address is assigned to the server
-- Can be upgraded later to Load Balancer + Multiple Application Servers if needed
+- Infrastructure can be upgraded later to Load Balancer + Multiple Application Servers if needed
